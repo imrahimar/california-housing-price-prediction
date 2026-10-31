@@ -1,5 +1,9 @@
 # California Housing Price Prediction
 
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.9-orange.svg)](https://scikit-learn.org/)
+
 Scikit-learn regression pipeline that predicts median house values for California districts. Covers feature engineering, train/test split, Linear Regression vs Random Forest, GridSearchCV, and feature importance.
 
 **Dataset:** [California Housing](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_california_housing.html) (built into scikit-learn - no CSV needed).
@@ -76,8 +80,9 @@ Step 7 (`GridSearchCV`) can take about 1 minute.
 
 ```
 california-housing-price-prediction/
-├── house_prices.py
-├── requirements.txt
+├── house_prices.py      # Full training and evaluation pipeline
+├── requirements.txt     # Pinned dependencies
+├── LICENSE              # MIT
 ├── README.md
 └── .gitignore
 ```
@@ -86,8 +91,10 @@ california-housing-price-prediction/
 
 - `venv/` is gitignored - do not commit it
 - No API keys required; data loads from scikit-learn
-- Clone with HTTPS or SSH (`git@github.com:imrahimar/california-housing-price-prediction.git`)
+- Clone with HTTPS: `https://github.com/imrahimar/california-housing-price-prediction.git`
 
 ## License
 
-Educational / portfolio project. California Housing data via scikit-learn.
+This project is licensed under the [MIT License](LICENSE).
+
+California Housing data is provided via scikit-learn for educational use.
